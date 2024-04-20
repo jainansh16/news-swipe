@@ -1,0 +1,44 @@
+.like {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    align-items: center;
+  }
+
+.dislike {
+    background-color: #8B0000;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    align-items: center;
+  }
+
+  
+  button:hover {
+    background-color: #003cff;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+
+  /* Button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+body {
+    background-color: lightblue
+}
