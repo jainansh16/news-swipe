@@ -1,5 +1,5 @@
 import React from 'react';
-import './NewsCard.css'; // Assuming you have created this CSS file for styling
+import './NewsCard.css';
 
 function NewsCard({article}) {
     return (

@@ -9,21 +9,6 @@ function NewsFeed() {
     const [counter, setCounter] = useState(1);
     const [loading, setLoading] = useState(true);
 
-    // useEffect(() => {
-    //     const fetchNews = async () => {
-    //         try {
-    //             const response = await axios('http://127.0.0.1:5000/news');
-    //             console.log(response)
-    //             setArticles(response.data.articles);
-    //             setLoading(false);
-    //         } catch (error) {
-    //             console.error("Failed to fetch news:", error);
-    //             setLoading(false);
-    //         }
-    //     };
-    //     fetchNews();
-    // }, []);
-
     const fetchNews = async () => {
         try {
             const response = await axios('http://127.0.0.1:5000/news');
@@ -37,7 +22,7 @@ function NewsFeed() {
     };
 
     useEffect(() => {
-        fetchNews(); // Call fetchNews inside useEffect
+        fetchNews();
     }, []);
 
     const handleLike = async () => {
