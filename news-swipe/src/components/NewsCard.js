@@ -17,4 +17,5 @@ function NewsCard({article}) {
     );
 }
 
+
 export default NewsCard;

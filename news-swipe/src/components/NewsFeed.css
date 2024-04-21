@@ -31,8 +31,7 @@
     background-color: #cccccc;
     cursor: not-allowed;
   }
-
-  /* Button container */
+  
 .button-container {
     display: flex;
     justify-content: center;
