@@ -113,10 +113,6 @@ function NewsFeed() {
         setCurrentIndex(prevIndex => (prevIndex < articles.length - 1 ? prevIndex + 1 : prevIndex));
     };
 
-    const handlePrevArticle = () => {
-        setCurrentIndex(prevIndex => (prevIndex > 0 ? prevIndex - 1 : 0));
-    };
-
     if (loading) {
         return <div>Loading...</div>;
     }
@@ -131,7 +127,7 @@ function NewsFeed() {
         <div className="news-feed">
             {currentArticle && <NewsCard article={currentArticle} />}
             <div className="button-container">
-                <button className="dislike" onClick={handlePrevArticle}>Dislike</button>
+                <button className="dislike" onClick={handleNextArticle}>Dislike</button>
                 <button className="like" onClick={handleLike}>Like</button>
             </div>
         </div>
