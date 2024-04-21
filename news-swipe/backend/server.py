@@ -31,7 +31,7 @@ def fetch_news():
         else:
             keyword = 'news'
         print("keyword is ", keyword)
-        url = f'https://newsapi.org/v2/everything?q={keyword}&from=2024-03-22&sortBy=popularity&apiKey=23b0e64b7bbd4e9c97a296319c836621'
+        url = f'https://newsapi.org/v2/everything?q={keyword}&from=2024-03-22&sortBy=popularity&apiKey=YOUR_OWN_API'
         print("url is ", url)
         response = requests.get(url)
         print("response code is ", response.status_code)
