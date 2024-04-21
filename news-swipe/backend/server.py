@@ -102,7 +102,7 @@ def analyze_keywords():
         all_keywords.extend(keywords)
 
     keyword_counts = Counter(all_keywords)
-    most_common_keywords = keyword_counts.most_common(10)
+    most_common_keywords = keyword_counts.most_common(20)
     print("Most Common Keywords: ", most_common_keywords)
 
     return jsonify({'most_common_keywords': most_common_keywords}), 200
